@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/login-add-modify.css">
+    <link rel ="icon" type="image" href="./IMG/favicon.png">
+    <title>Log in for Pixel Legends</title>
+</head>
+<body>
+    <form id='loginForm' autocomplete='off' class='form' onsubmit="return validationForm()">
+        <div class='control'>
+            <h1>
+                Pixel Legends
+            </h1>
+        </div>
+        <div class='control block-cube block-input'>
+            <input name='username' placeholder='Username' type='text' id='loginUser'>
+            <div class='bg-top'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='bg-right'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='bg'>
+                <div class='bg-inner'></div>
+            </div>
+        </div>
+        <div class='control block-cube block-input'>
+            <input name='password' placeholder='Password' type='password' id='loginPass'>
+            <div class='bg-top'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='bg-right'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='bg'>
+                <div class='bg-inner'></div>
+            </div>
+        </div>
+
+        <div class="form-group"><span id="userError" class="error-message"></span></div>
+        <div class="form-group"><span id="passError" class="error-message"></span></div>
+        
+        <button class='btn block-cube block-cube-hover' type='submit' name="submitLogin" id="submitLogin">
+            <div class='bg-top'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='bg-right'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='bg'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='text'>
+                LOG IN
+            </div>
+        </button>
+    </form>
+    <script src="./JS/login.js"></script>
+</body>
+</html>

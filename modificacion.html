@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/login-add-modify.css">
+    <link rel ="icon" type="image" href="./IMG/favicon.png">
+    <title>Modify Players for Pixel Legends</title>
+</head>
+<body>
+    <form id='myForm' autocomplete='off' class='form' onsubmit="return validationForm()">
+        <div class='control'>
+            <h1>
+                Modify
+            </h1>
+        </div>
+        <div class='control block-cube block-input'>
+            <input name='username' placeholder='Username' type='text' id='addUser' value="mabf2608">
+            <div class='bg-top'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='bg-right'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='bg'>
+                <div class='bg-inner'></div>
+            </div>
+        </div>
+        <div class='control block-cube block-input'>
+            <input name='password' placeholder='Password' type='password' id='addPass' value="Perro2002s">
+            <div class='bg-top'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='bg-right'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='bg'>
+                <div class='bg-inner'></div>
+            </div>
+        </div>
+        <div class='control block-cube block-input'>
+            <input name='dni' placeholder='DNI' type='text' id='addDni' value="26262626X">
+            <div class='bg-top'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='bg-right'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='bg'>
+                <div class='bg-inner'></div>
+            </div>
+        </div>
+        <div class='control block-cube block-input'>
+            <input name='level' placeholder='Level' type='text' id='addLevel' value="22">
+            <div class='bg-top'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='bg-right'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='bg'>
+                <div class='bg-inner'></div>
+            </div>
+        </div>
+        <div class='control block-cube block-input'>
+            <input name='email' placeholder='Email' type='text' id='addEmail' value="mbonfer2608@g.educaand.es">
+            <div class='bg-top'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='bg-right'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='bg'>
+                <div class='bg-inner'></div>
+            </div>
+        </div>
+        
+        <select class="select-class" name="gender" id="addGender">
+            <option value="" disabled selected>--Select Gender</option>
+            <option value="male" selected>Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <br><br>
+
+        <div class="checkbox-container">
+            <label class="checkbox-label">Receive additional information</label><br>
+            <input value="yes"  type="radio" name="receiveInfo" id="receiveInfoYes" checked> Yes
+            <input value="no" type="radio" name="receiveInfo" id="receiveInfoNo"> No
+        </div>
+        <br>
+        
+
+        <div class="checkbox-container">
+            <label class="checkbox-label">Languages</label><br>
+            <input value="es" type="checkbox" name="languages" id="languagesEsp" checked> Es
+            <input value="no" type="checkbox" name="languages" id="languagesEn" checked> En
+            <input value="no" type="checkbox" name="languages" id="languagesFr"> Fr
+            <input value="no" type="checkbox" name="languages" id="languagesGr"> Gr
+        </div><br><br>
+
+        <div class="form-group"><span id="userError" class="error-message"></span></div>
+        <div class="form-group"><span id="passError" class="error-message"></span></div>
+        <div class="form-group"><span id="dniError" class="error-message"></span></div>
+        <div class="form-group"><span id="levelError" class="error-message"></span></div>
+        <div class="form-group"><span id="emailError" class="error-message"></span></div>
+        <div class="form-group"><span id="genderError" class="error-message"></span></div>
+        <div class="form-group"><span id="infoError" class="error-message"></span></div>
+        <div class="form-group"><span id="lanError" class="error-message"></span></div>
+        
+        <button class='btn block-cube block-cube-hover' type='submit' name="submitLogin" id="submitLogin">
+            <div class='bg-top'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='bg-right'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='bg'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='text'>
+                SUBMIT
+            </div>
+        </button>
+    </form>
+    <script src="./JS/add-modify.js"></script>
+</body>
+</html>
